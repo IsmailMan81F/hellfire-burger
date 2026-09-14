@@ -15,11 +15,11 @@ export function Hero() {
           loop
           muted
           playsInline
+          preload="auto"
+          src="/assets/videos/hero%20video.mp4"
           poster={heroPoster}
           className="w-full h-full object-cover object-center"
-        >
-          <source src="/assets/videos/hero%20video.mp4" type="video/mp4" />
-        </video>
+        />
         {/* Darkening overlay to ensure contrast and readability without gradient */}
         <div className="absolute inset-0 bg-[#0D0D0D]/80" />
       </div>
