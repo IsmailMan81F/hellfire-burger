@@ -69,6 +69,43 @@ body {
   text-transform: uppercase;
 }
 
+@keyframes hero-content-enter {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title-line,
+.hero-action {
+  opacity: 0;
+  animation: hero-content-enter 700ms ease-out forwards;
+}
+
+.hero-title-line-first {
+  animation-delay: 150ms;
+}
+
+.hero-title-line-second {
+  animation-delay: 300ms;
+}
+
+.hero-action {
+  animation-delay: 500ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-title-line,
+  .hero-action {
+    opacity: 1;
+    animation: none;
+  }
+}
+
 @media (min-width: 640px) {
   .display-title {
     font-size: 5.5rem;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowDownIcon } from './Icons';
-import heroPoster from '../assets/images/hero_flame_burger_1789405650300.jpg';
 
 export function Hero() {
   return (
@@ -17,7 +16,6 @@ export function Hero() {
           playsInline
           preload="auto"
           src="/assets/videos/hero%20video.mp4"
-          poster={heroPoster}
           className="w-full h-full object-cover object-center"
         />
         {/* Darkening overlay to ensure contrast and readability without gradient */}
@@ -30,12 +28,12 @@ export function Hero() {
           id="hero-title"
           className="display-title text-[#F5F0E8] max-w-7xl"
         >
-          <span className="block text-[#C1272D]">NÉ EN ENFER</span>
-          <span className="block text-[#FFA733]">LE GOÛT DU PARADIS</span>
+          <span className="hero-title-line hero-title-line-first block text-[#C1272D]">NÉ EN ENFER</span>
+          <span className="hero-title-line hero-title-line-second block text-[#FFA733]">LE GOÛT DU PARADIS</span>
         </h1>
 
         {/* Action Buttons */}
-        <div className="mt-20 sm:mt-16 flex items-center justify-center w-full sm:w-auto">
+        <div className="hero-action mt-20 sm:mt-16 flex items-center justify-center w-full sm:w-auto">
           {/* View Menu Button */}
           <a
             href="#menu"
