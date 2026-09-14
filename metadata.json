@@ -1,0 +1,7 @@
+{
+  "name": "Hellfire Burger",
+  "description": "Fast-food artisanal de burgers cuits à la flamme à Alger Centre. Né en Enfer, le Goût du Paradis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
